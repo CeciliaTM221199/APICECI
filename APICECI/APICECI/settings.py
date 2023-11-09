@@ -101,6 +101,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+EMAIL_HOST_USER
+
+EMAIL_HOST_PASSWORD 
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -125,3 +128,13 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#Servidor SMTP servidor de correos 
+EMAIL_BACKEND= 'django.core.mail.backens.smtp.EmailBackend'
+EMAIL_HOST= 'smtp.gmail.com'
+EMAIL_PORT= 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ceciliatm221199@gmail.com'
+EMAIL_HOST_PASSWORD = 'xjmu nlog cchg byac'
+
+
